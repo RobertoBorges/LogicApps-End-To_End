@@ -37,3 +37,10 @@ module virtualNetwork 'br/public:avm/res/network/virtual-network:0.4.0' = {
     ]
   }
 }
+output vnetid string = virtualNetwork.outputs.resourceId
+output logicappssn string = virtualNetwork.outputs.subnetResourceIds[0]
+output webappssn string = virtualNetwork.outputs.subnetResourceIds[1]
+output vmssn string = virtualNetwork.outputs.subnetResourceIds[2]
+output generalsn string = virtualNetwork.outputs.subnetResourceIds[3]
+output storageaccsn string = virtualNetwork.outputs.subnetResourceIds[4]
+
